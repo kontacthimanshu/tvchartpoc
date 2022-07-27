@@ -3,7 +3,7 @@
     <div class="col-12">
       <ul class="d-block">
         <li class="d-inline-block p-2">
-          <label class="d-block border border-2 rounded-pill oifontsize">380876176</label>
+          <label [ngClass]="{burst:burst}" class="d-block border border-2 rounded-pill oifontsize" (click)="changeValue()">{{oi}}</label>
           <label class="d-block border border-2 rounded-pill oifontsize">36000CE</label>
         </li>
         <li class="d-inline-block p-2">
@@ -86,11 +86,537 @@
     </div>
   </div>
   <div class="row" id="main">
-    <div class="col-6">
-      section 1
-      </div>
       <div class="col-6">
-        section 2
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+      </div>
+      <div class="col-6" style="overflow-y:scroll;">
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">ATM</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ATM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM1</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM2</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM3</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM4</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">PE ==></div>
+          <div class="col-2">OTM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
+        <div class="row" style="border: solid 1px black;">
+          <div class="col-2">BEATM5</div>
+          <div class="col-2">36400</div>
+          <div class="col-2">.34</div>
+          <div class="col-1">CE ==></div>
+          <div class="col-2">ITM ==></div>
+          <div class="col-3">Build-up - 358000</div>
+        </div>
       </div>
   </div>
   <div class="row bg-primary text-white" id="footer">
